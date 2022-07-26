@@ -1,5 +1,7 @@
+@extends("layouts.app")
 
 @section('page_content')
+
 <div class="container-fluid">
     <div class="row">
         <div class="col">
@@ -12,4 +14,5 @@
         </div>
     </div>
 </div>
+
 @endsection
