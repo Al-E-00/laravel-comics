@@ -2,10 +2,10 @@
     THIS IS VISIBLE IN EVERY PAGE OF OUR WEBSITE --}}
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <a href="#">Dc power <span>sm</span> visa<span><i class="fa-regular fa-registered"></i></span></a>
-            <a href="#">addition dc sites <i class="fa-regular fa-caret-down"></i></a>
+    <div class="row custom-first-line-header">
+        <div class="col text-end">
+            <a class="custom-link" href="#">Dc power <span class="custom-text">sm</span> visa<span><i class="fa-regular fa-registered"></i></span></a>
+            <a class="custom-link" href="#">addition dc sites</a>
         </div>
     </div>
     <div class="row">

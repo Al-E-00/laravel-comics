@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&display=swap');
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "partials/header";
 @import "partials/main_page_content";
@@ -5,5 +6,9 @@
 @import "partials/link_navbar";
 @import "partials/cards_style";
 @import "partials/banner_sign_up";
+
+body {
+    font-family: 'Asap Condensed', sans-serif;
+}
 
 
