@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {{-- YIELD -> 
+        used to define a section in a layout and is constantly used 
+        to get content from a child page unto a master page.
+    --}}
+
     <title>@yield('page_title')</title>
 
     {{-- import bootstrap v5.2 --}}
@@ -20,6 +26,10 @@
 <body>
     
     <header>
+        {{-- INLCUDE -> 
+            just like a basic PHP include, 
+            it includes a "partial" view into your view
+        --}}
         @include('partials.header')
     </header>
 
@@ -30,5 +40,8 @@
     <footer>
         @include('partials.footer')
     </footer>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js' integrity='sha512-8Y8eGK92dzouwpROIppwr+0kPauu0qqtnzZZNEF8Pat5tuRNJxJXCkbQfJ0HlUG3y1HB3z18CSKmUo7i2zcPpg==' crossorigin='anonymous'></script>
 </body>
 </html>
