@@ -1,0 +1,39 @@
+
+.background-the-footer-second-layer {
+    background-image: url('../../images/dc-logo-bg.png');
+    z-index: 1;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: -25px;
+    bottom: 0;
+    left: 60%;
+    transform: scale(1.1);
+}
+
+.background-the-footer{
+    background-image:  url('../../images/footer-bg.jpg');
+    position: relative;
+    padding: 0 8rem;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    ul {
+        
+        padding: 3rem 0;
+        color: white;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: rgba(165, 165, 165, 0.853);
+                &:hover{
+                    color: darken(rgba(165, 165, 165, 0.853), 20);
+
+                }
+            }
+        }
+    }
+}

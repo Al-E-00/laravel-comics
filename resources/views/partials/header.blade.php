@@ -12,7 +12,7 @@
         <div class="col">
             <div>
                 <div class="d-flex justify-content-between custom-nav-style">
-                    <img class="logo-image-navbar" src="../../images/dc-logo.png" alt="Logo DC">
+                    <img class="logo-image-navbar" src='{{ asset("images/dc-logo.png") }}' alt="Logo DC">
                     <ul class="d-flex gap-4 m-0 list-unstyled align-items-center">
                         <li>
                             <a class="links-navbar " href="#" class="">characters</a>

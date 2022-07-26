@@ -41,6 +41,62 @@
      object-fit: cover;
 }
 
+.background-the-footer-second-layer {
+  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  z-index: 1;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -25px;
+  bottom: 0;
+  left: 60%;
+  transform: scale(1.1);
+}
+
+.background-the-footer {
+  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  position: relative;
+  padding: 0 8rem;
+  overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.background-the-footer ul {
+  padding: 3rem 0;
+  color: white;
+}
+
+.background-the-footer ul li {
+  list-style: none;
+}
+
+.background-the-footer ul li a {
+  text-decoration: none;
+  color: rgba(165, 165, 165, 0.853);
+}
+
+.background-the-footer ul li a:hover {
+  color: rgba(114, 114, 114, 0.853);
+}
+
+.custom-navlinks-section {
+  padding: 2rem 8rem;
+}
+
+.custom-navlinks-section .img-custom-navlinks {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.custom-navlinks-section p {
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+}
+
 .custom-card-style {
   border: 0;
   border-radius: 0;

@@ -17,5 +17,9 @@
         </div>
     </div>
 </div>
+<div>
+    @include('partials.link_navbar')
+</div>
+
 
 @endsection
