@@ -9,7 +9,9 @@
             </div>
         </div>  
         <div class="row">
-            
+            <div class="col">
+                @dump($comics)
+            </div>
         </div>
     </div>
 </div>
