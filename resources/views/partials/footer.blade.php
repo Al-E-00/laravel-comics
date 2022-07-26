@@ -49,3 +49,4 @@
         </div>
     </div>
 </div>
+@include('partials.sign_up')
