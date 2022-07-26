@@ -1,7 +1,7 @@
 {{-- HEADER-> included inside our website
     THIS IS VISIBLE IN EVERY PAGE OF OUR WEBSITE --}}
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col">
             <a href="#">Dc power <span>sm</span> visa<span><i class="fa-regular fa-registered"></i></span></a>
