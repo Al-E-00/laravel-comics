@@ -1,13 +1,14 @@
 .main-jumbotron {
     background-color: rgb(28, 28, 28);
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-right: 8rem;
     padding-left: 8rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
     position: relative;
 
     h5 {
         color: white;
+        text-transform: uppercase;
     }
 }
 
@@ -26,6 +27,7 @@
     h5{
         font-weight: 700;
         font-size: 1.3rem;
+        text-transform: uppercase;
     }
 }
 
@@ -45,5 +47,6 @@
         font-size: .8rem;
         font-weight: 500;
         text-align: center;
+        text-transform: uppercase;
     }
 }

@@ -6,11 +6,11 @@
     <div class="row background-jumbotron">
         
     </div>
-    <div class="row row-cols-6 main-jumbotron">
+    <div class="row main-jumbotron">
         <div class="banner-custom bg-primary">
             <h5 class="text-uppercase m-0">Current series</h5>
         </div>
-        <div class="col g-3 p-0 d-flex justify-content-center">
+        <div class="col g-3 p-0 d-flex justify-content-center flex-wrap">
             @foreach($comics as $comic)
                     @include('partials.cards', [
                         "comic" => $comic

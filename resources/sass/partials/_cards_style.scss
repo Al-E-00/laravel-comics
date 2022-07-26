@@ -6,8 +6,8 @@
 }
 
 .card-custom-style {
-height: 180px;
-width: 180px;
+height: 170px;
+width: 170px;
 border-radius: 0;
 overflow: hidden;
 cursor: pointer;
@@ -21,9 +21,10 @@ img {
 
 .text-card-custom-style{
     color: white;
-    max-width: 180px;
+    max-width: 170px;
     font-size: .7rem;
     padding-top: .8rem;
     font-weight: 300;
     cursor: pointer;
+    text-transform: uppercase;
 }   
