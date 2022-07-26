@@ -6,7 +6,6 @@
     <div class="row">
         <div class="col">
             <div class="full-background-jumbotron">
-                <p>fkdjfjlk</p>
             </div>
         </div>  
         <div class="row">
