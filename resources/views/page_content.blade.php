@@ -10,13 +10,13 @@
         <div class="banner-custom bg-primary">
             <h5 class="text-uppercase m-0">Current series</h5>
         </div>
-        <div class="col g-3 p-0 d-flex justify-content-center flex-wrap">
+        <a href="#" class="col g-3 p-0 d-flex justify-content-center flex-wrap">
             @foreach($comics as $comic)
                     @include('partials.cards', [
                         "comic" => $comic
                     ])
             @endforeach
-        </div>
+        </a>
         <div class="banner-custom-load-more bg-primary">
             <h5 class="text-uppercase m-0">Load More</h5>
         </div>

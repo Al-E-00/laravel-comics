@@ -50,6 +50,10 @@
   position: relative;
 }
 
+.main-jumbotron a {
+  text-decoration: none;
+}
+
 .main-jumbotron h5 {
   color: white;
   text-transform: uppercase;
