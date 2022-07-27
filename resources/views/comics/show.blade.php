@@ -32,7 +32,11 @@ $banner_icons = [
         </div>
         <div class="row">
             <div class="col custom-comic-image-section p-0 custom-container-dimension">
-                <img class="custom-single-comic-image" src="{{ asset($comic['thumb']) }}">
+                <div class="image-comic-container">
+                    <img class="custom-single-comic-image" src="{{ asset($comic['thumb']) }}">
+                    <div class="first-write-banner">Comic book</div>
+                    <div class="second-write-banner">View gallery</div>
+                </div>
                 <div class="custom-division-line-header-comic"></div>
             </div>
         </div>
@@ -160,7 +164,7 @@ $banner_icons = [
                                 <span class="text-banner-section">
                                     {{ $banner['name'] }}
                                 </span>
-
+                                
                                 <img class="images-banner-section" src="{{ asset($banner['img']) }}" alt="">
 
 

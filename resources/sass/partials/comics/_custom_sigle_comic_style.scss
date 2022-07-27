@@ -1,13 +1,37 @@
-.custom-single-comic-image {
-    position: absolute;
-    left: 15%;
-    top: 17rem;
-    border: 1px solid white;
-    z-index: 999;
-
-}
-
 .custom-comic-image-section {
+    .image-comic-container {
+        position: absolute;
+        left: 15%;
+        top: 17rem;
+        border: 1px solid white;
+        z-index: 999;
+
+        .custom-single-comic-image {
+            position: relative
+        }
+        .first-write-banner, .second-write-banner {
+            background-color: rgb(50,	152,	208	);
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .first-write-banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 .4rem;
+        }
+
+        .second-write-banner {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+        }
+    }
+
     .custom-division-line-header-comic {
         height: 4rem;
         width: 100%;
@@ -93,7 +117,6 @@
             }
 
             img {
-
                 justify-content: end;
             }
         }
@@ -110,7 +133,8 @@
             padding-bottom: 1rem;
         }
 
-        .single-descriptive-sections-talent, .single-descriptive-sections-specs {
+        .single-descriptive-sections-talent,
+        .single-descriptive-sections-specs {
             padding-top: .7rem;
             padding-bottom: .7rem;
 
@@ -127,7 +151,7 @@
 
         .single-descriptive-sections-talent {
             .content-descriptive-section {
-                color:rgb(13, 110, 253);
+                color: rgb(13, 110, 253);
             }
         }
 
@@ -136,7 +160,7 @@
                 &.text-custom {
 
                     text-transform: uppercase;
-                    color:rgb(13, 110, 253);
+                    color: rgb(13, 110, 253);
                 }
             }
         }
@@ -148,8 +172,8 @@
         border-top: 1px solid lightgrey;
         display: flex;
         flex-direction: row;
-        
-        
+
+
 
         .single-banner-style {
 
@@ -158,6 +182,7 @@
             border-left: 1px solid lightgrey;
             display: flex;
             justify-content: space-between;
+
             &:last-child {
                 border-right: 1px solid lightgrey;
             }
