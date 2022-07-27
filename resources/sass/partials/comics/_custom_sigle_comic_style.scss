@@ -140,7 +140,37 @@
                 }
             }
         }
+    }
 
 
+    &.banner-icons-section {
+        background-color: rgb(244, 244, 244);
+        border-top: 1px solid lightgrey;
+        display: flex;
+        flex-direction: row;
+        
+        
+
+        .single-banner-style {
+
+            width: calc(100%/4);
+            padding: 1rem;
+            border-left: 1px solid lightgrey;
+            display: flex;
+            justify-content: space-between;
+            &:last-child {
+                border-right: 1px solid lightgrey;
+            }
+        }
+
+        .text-banner-section {
+            text-transform: uppercase;
+            color: lightgrey;
+        }
+
+        .images-banner-section {
+            height: 3rem;
+            align-self: end;
+        }
     }
 }

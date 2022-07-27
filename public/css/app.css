@@ -344,6 +344,35 @@
   color: rgb(13, 110, 253);
 }
 
+.custom-container-dimension.banner-icons-section {
+  background-color: rgb(244, 244, 244);
+  border-top: 1px solid lightgrey;
+  display: flex;
+  flex-direction: row;
+}
+
+.custom-container-dimension.banner-icons-section .single-banner-style {
+  width: 25%;
+  padding: 1rem;
+  border-left: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-container-dimension.banner-icons-section .single-banner-style:last-child {
+  border-right: 1px solid lightgrey;
+}
+
+.custom-container-dimension.banner-icons-section .text-banner-section {
+  text-transform: uppercase;
+  color: lightgrey;
+}
+
+.custom-container-dimension.banner-icons-section .images-banner-section {
+  height: 3rem;
+  align-self: end;
+}
+
 body {
   font-family: "Asap Condensed", sans-serif;
 }

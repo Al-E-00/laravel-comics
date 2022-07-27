@@ -153,14 +153,17 @@ $banner_icons = [
                 </div>
             </div>
         </div>
-        <div class="row custom-container-dimension ">
-            <div class="col d-flex">
+        <div class="row custom-container-dimension banner-icons-section">
+            <div class="col d-flex p-0">
                 @foreach ($banner_icons as $banner)
-                    <div>
-                        <span>
-                            {{ $banner['name'] }}
-                        </span>
-                        <img src="{{ asset($banner['img']) }}" alt="">
+                    <div class="single-banner-style">
+                                <span class="text-banner-section">
+                                    {{ $banner['name'] }}
+                                </span>
+
+                                <img class="images-banner-section" src="{{ asset($banner['img']) }}" alt="">
+
+
                     </div>
                 @endforeach
             </div>
