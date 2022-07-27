@@ -59,7 +59,7 @@
 
 .background-jumbotron {
   min-height: 400px;
-  background-image: url(/images/jumbotron.jpg?1b0a3671766964a4114f90322970b124);
+  background-image: url("/images/jumbotron.jpg");
 }
 
 .banner-custom {
@@ -99,7 +99,7 @@
 }
 
 .background-the-footer-second-layer {
-  background-image: url(/images/dc-logo-bg.png?f4404ce9dc132a08a47f19e3f73f1417);
+  background-image: url("/images/dc-logo-bg.png");
   z-index: 1;
   position: absolute;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@
 }
 
 .background-the-footer {
-  background-image: url(/images/footer-bg.jpg?dfd68d2946f211e1b678af05fd2f830b);
+  background-image: url("/images/footer-bg.jpg");
   position: relative;
   padding: 0 8rem;
   overflow: hidden;
