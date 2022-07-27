@@ -1,10 +1,10 @@
 @extends ('layouts.app')
 
-@section('page_title', 'videos')
+@section('page_title', 'shop')
 
 @section('page_content')
 
-<h1>Page Videos</h1>
+<h1>Page Shop</h1>
 <p>WORK IN PROGRESS</p>
 
 @endsection

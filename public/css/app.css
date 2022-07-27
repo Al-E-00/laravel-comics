@@ -35,10 +35,44 @@
 
 .logo-image-navbar {
   width: 4rem;
+  height: 4rem;
+  align-self: center;
 }
 
 .custom-nav-style {
-  padding: 0.8rem 8rem;
+  padding: 0 8rem;
+}
+
+.custom-nav-style ul li {
+  padding-left: 5rem;
+}
+
+.custom-nav-style ul li a {
+  margin-left: 2.5rem;
+}
+
+.custom-nav-style ul li a .custom-arrow-down-header {
+  padding-left: 0.5rem;
+  color: rgb(2, 130, 249);
+}
+
+.custom-nav-style ul li .custom-input-header {
+  height: 58px;
+  width: 7rem;
+  margin-left: 3rem;
+}
+
+.custom-nav-style ul li .custom-input-header input {
+  border: 0;
+  border-bottom: 1px solid rgb(2, 130, 249);
+  border-radius: 0;
+  padding-bottom: 0.4rem;
+}
+
+.custom-nav-style ul li .custom-input-header label {
+  height: 58px;
+  top: 17px;
+  left: 35px;
 }
 
 .main-jumbotron {

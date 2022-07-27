@@ -47,7 +47,7 @@ $headerLinks = [
         'name' => 'news'
     ],
     [
-        'text' => 'shop',
+        'text' => 'shop <i class="fa-solid fa-caret-down custom-arrow-down-header"></i>',
         'link' => '/shop',
         'name' => 'shop'
     ],
@@ -67,21 +67,20 @@ $headerLinks = [
         </div>
     </div>
     <div class="row">
-        <div class="col">
-            <div>
-                <div class="d-flex justify-content-between custom-nav-style">
-                    <img class="logo-image-navbar" src='{{ asset("images/dc-logo.png") }}' alt="Logo DC">
-                    <ul class="d-flex gap-4 m-0 list-unstyled align-items-center">
-                        <li>
+                <div class="d-flex custom-nav-style">
+                    <img class="logo-image-navbar " src='{{ asset("images/dc-logo.png") }}' alt="Logo DC">
+                    <ul class="d-flex m-0 list-unstyled align-items-center">
+                        <li class="d-flex">
                             {{-- add active class if the link is active --}}
                             @foreach ($headerLinks as $headerlink)
-                            <a class="links-navbar {{Request::route()->getName() === $headerlink['name'] ? 'active' : '' }}" href="{{ $headerlink['link'] }}" class="">{{ $headerlink['text'] }}</a>
+                            <a class="links-navbar {{Request::route()->getName() === $headerlink['name'] ? 'active' : '' }}" href="{{ $headerlink['link'] }}" class="">{!! $headerlink['text'] !!}</a>
                             @endforeach
+                            <div class="form-floating custom-input-header">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="search">
+                                <label for="floatingInput">Search <i class="fa-solid fa-magnifying-glass ps-1"></i></label>
+                            </div>
                         </li>
                     </ul>
-        
-                </div>
-            </div>
         </div>
     </div>
 </div>

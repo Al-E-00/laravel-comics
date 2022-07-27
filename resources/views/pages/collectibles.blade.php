@@ -1,6 +1,6 @@
-@extends ('layouts.app');
+@extends ('layouts.app')
 
-@section('page_title', 'collectibles');
+@section('page_title', 'collectibles')
 
 @section('page_content')
 

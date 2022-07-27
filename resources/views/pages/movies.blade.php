@@ -1,6 +1,6 @@
-@extends ('layouts.app');
+@extends ('layouts.app')
 
-@section('page_title', 'movies');
+@section('page_title', 'movies')
 
 @section('page_content')
 
