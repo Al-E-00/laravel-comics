@@ -31,9 +31,29 @@ $banner_icons = [
 
         </div>
         <div class="row">
-            <div class="col custom-comic-image-section p-0">
+            <div class="col custom-comic-image-section p-0 custom-container-dimension">
                 <img class="custom-single-comic-image" src="{{ asset($comic['thumb']) }}">
                 <div class="custom-division-line-header-comic"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5>{{ $comic['title'] }}</h5>
+                <div>
+                    <span>
+                        U.S. Price: {{ $comic['price'] }}
+                    </span>
+                    <span>
+                        {{ $comic['availability'] }}
+                    </span>
+                    <button>Check Availability</button>
+                </div>
+                <p>
+                    {{ $comic['description'] }}
+                </p>
+            </div>
+            <div class="col">
+                <img src="{{ asset('images/adv.jpg') }}" alt="{{ asset($comic['title']) }}">
             </div>
         </div>
         <div class="row">

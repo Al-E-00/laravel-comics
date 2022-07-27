@@ -224,6 +224,11 @@
   background-color: rgb(13, 110, 253);
 }
 
+.custom-container-dimension {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 body {
   font-family: "Asap Condensed", sans-serif;
 }
