@@ -34,14 +34,18 @@ Route::get("/comics/{id}", function($id) {
     array. Array keys are preserved.*/
 
 
+    $foundComic = null;
 
-    $foundComics = array_filter($comics, function ($comic) use($id) {
-        return $comic["id"] === ((int) $id);
-    });
+    foreach ($comics as $i => $comic) {
+        if ($comic['id'] === intval($id)) {
+            $foundComic = $comic;
+            break;
+        }
+    }
 
-    $keys = array_keys($foundComics)[0];
-
-    $comic = $foundComics[$keys];
-
+    if(is_null($foundComic)) {
+        abort("404");
+    };
+    
     return view("comics.show", compact("comic"));
 })->name("comics.show");
