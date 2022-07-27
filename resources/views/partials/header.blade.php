@@ -1,3 +1,61 @@
+@php
+
+$headerLinks = [
+    [
+        'text' => 'characters',
+        'link' => '/',
+        'name' => 'characters'
+    ],
+    [
+        'text' => 'comics',
+        'link' => '/',
+        'name' => 'comics'
+    ],
+    [
+        'text' => 'movies',
+        'link' => '/',
+        'name' => 'movies'
+    ],
+    [
+        'text' => 'tv',
+        'link' => '/',
+        'name' => 'tv'
+    ],
+    [
+        'text' => 'games',
+        'link' => '/',
+        'name' => 'games'
+    ],
+    [
+        'text' => 'collectibles',
+        'link' => '/',
+        'name' => 'collectibles'
+    ],
+    [
+        'text' => 'videos',
+        'link' => '/',
+        'name' => 'videos'
+    ],
+    [
+        'text' => 'fans',
+        'link' => '/',
+        'name' => 'fans'
+    ],
+    [
+        'text' => 'news',
+        'link' => '/',
+        'name' => 'news'
+    ],
+    [
+        'text' => 'shop',
+        'link' => '/',
+        'name' => 'shop'
+    ],
+]
+
+@endphp
+
+
 {{-- HEADER-> included inside our website
     THIS IS VISIBLE IN EVERY PAGE OF OUR WEBSITE --}}
 
@@ -15,16 +73,10 @@
                     <img class="logo-image-navbar" src='{{ asset("images/dc-logo.png") }}' alt="Logo DC">
                     <ul class="d-flex gap-4 m-0 list-unstyled align-items-center">
                         <li>
-                            <a class="links-navbar " href="#" class="">characters</a>
-                            <a class="links-navbar " href="#" class="active">comics</a>
-                            <a class="links-navbar " href="#" class="">movies</a>
-                            <a class="links-navbar " href="#" class="">tv</a>
-                            <a class="links-navbar " href="#" class="">games</a>
-                            <a class="links-navbar " href="#" class="">collectibles</a>
-                            <a class="links-navbar " href="#" class="">videos</a>
-                            <a class="links-navbar " href="#" class="">fans</a>
-                            <a class="links-navbar " href="#" class="">news</a>
-                            <a class="links-navbar " href="#" class="">shop</a>
+                            {{-- add active class if the link is active --}}
+                            @foreach ($headerLinks as $headerlink)
+                            <a class="links-navbar {{Request::route()->getName() === $headerlink['name'] ? 'active' : '' }}" href="{{ $headerlink['link'] }}" class="">{{ $headerlink['text'] }}</a>
+                            @endforeach
                         </li>
                     </ul>
         
