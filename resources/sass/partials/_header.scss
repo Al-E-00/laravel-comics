@@ -1,8 +1,24 @@
 .custom-first-line-header{
     background-color: rgb(13,110,253);
+    padding: 0 8rem;
+    display: flex;
+    font-size: .5rem;
     .col {
         .custom-link {
             color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: .8rem;
+            padding-left: 3rem;
+            .custom-text {
+                font-size: .5rem;
+                vertical-align: text-top;
+            }
+            .custom-text-registered {
+                font-size: .6rem;
+                
+            }
+            
         }
     }
 }

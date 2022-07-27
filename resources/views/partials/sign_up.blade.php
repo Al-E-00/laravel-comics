@@ -1,6 +1,6 @@
 <div>
     <div class="container-fluid">
-        <div class="row bg-secondary custom-style-banner">
+        <div class="row custom-style-banner">
 
             <div class="col">
                 <button class="btn btn-outline-primary text-uppercase button-custom-style">Sign Up Now!</button>

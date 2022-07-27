@@ -62,12 +62,12 @@ $headerLinks = [
 <div class="container-fluid">
     <div class="row custom-first-line-header">
         <div class="col text-end">
-            <a class="custom-link" href="#">Dc power <span class="custom-text">sm</span> visa<span><i class="fa-regular fa-registered"></i></span></a>
-            <a class="custom-link" href="#">addition dc sites</a>
+            <a class="custom-link" href="#">Dc power <span class="custom-text">sm</span>  visa<span><i class="fa-regular fa-registered custom-text-registered"></i></span></a>
+            <a class="custom-link" href="#">addition dc sites <i class="fa-solid fa-caret-down"></i></a>
         </div>
     </div>
     <div class="row">
-                <div class="d-flex custom-nav-style">
+                <div class="d-flex custom-nav-style justify-content-between">
                     <img class="logo-image-navbar " src='{{ asset("images/dc-logo.png") }}' alt="Logo DC">
                     <ul class="d-flex m-0 list-unstyled align-items-center">
                         <li class="d-flex">
