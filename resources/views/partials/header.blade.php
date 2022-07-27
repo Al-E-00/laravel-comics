@@ -3,7 +3,7 @@
 $headerLinks = [
     [
         'text' => 'characters',
-        'link' => '/',
+        'link' => '/characters',
         'name' => 'characters'
     ],
     [
@@ -13,42 +13,42 @@ $headerLinks = [
     ],
     [
         'text' => 'movies',
-        'link' => '/',
+        'link' => '/movies',
         'name' => 'movies'
     ],
     [
         'text' => 'tv',
-        'link' => '/',
+        'link' => '/tv',
         'name' => 'tv'
     ],
     [
         'text' => 'games',
-        'link' => '/',
+        'link' => '/games',
         'name' => 'games'
     ],
     [
         'text' => 'collectibles',
-        'link' => '/',
+        'link' => '/collectibles',
         'name' => 'collectibles'
     ],
     [
         'text' => 'videos',
-        'link' => '/',
+        'link' => '/videos',
         'name' => 'videos'
     ],
     [
         'text' => 'fans',
-        'link' => '/',
+        'link' => '/fans',
         'name' => 'fans'
     ],
     [
         'text' => 'news',
-        'link' => '/',
+        'link' => '/news',
         'name' => 'news'
     ],
     [
         'text' => 'shop',
-        'link' => '/',
+        'link' => '/shop',
         'name' => 'shop'
     ],
 ]
