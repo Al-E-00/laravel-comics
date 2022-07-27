@@ -44,4 +44,4 @@ Route::get("/comics/{id}", function($id) {
     $comic = $foundComics[$keys];
 
     return view("comics.show", compact("comic"));
-});
+})->name("comics.show");

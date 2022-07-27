@@ -10,13 +10,13 @@
         <div class="banner-custom bg-primary">
             <h5 class="text-uppercase m-0">Current series</h5>
         </div>
-        <a href="#" class="col g-3 p-0 d-flex justify-content-center flex-wrap">
-            @foreach($comics as $comic)
+        @foreach($comics as $comic)
+        <a href="{{ route('comics.show', $comic['id']) }}" class="col g-3 p-0 d-flex justify-content-center flex-wrap">
                     @include('partials.cards', [
                         "comic" => $comic
                     ])
-            @endforeach
         </a>
+            @endforeach
         <div class="banner-custom-load-more bg-primary">
             <h5 class="text-uppercase m-0">Load More</h5>
         </div>
