@@ -98,4 +98,49 @@
             }
         }
     }
+
+    &.talent-and-specs-section {
+        background-color: rgb(244, 244, 244);
+        padding-top: 2rem;
+        padding-bottom: 8rem;
+
+        h6 {
+            color: rgb(1, 40, 75);
+            font-size: 1.5rem;
+            padding-bottom: 1rem;
+        }
+
+        .single-descriptive-sections-talent, .single-descriptive-sections-specs {
+            padding-top: .7rem;
+            padding-bottom: .7rem;
+
+            .title-descriptive-section {
+                padding-right: 3rem;
+            }
+
+            border-top: 1px solid lightgrey;
+
+            &:last-child {
+                border-bottom: 1px solid lightgrey;
+            }
+        }
+
+        .single-descriptive-sections-talent {
+            .content-descriptive-section {
+                color:rgb(13, 110, 253);
+            }
+        }
+
+        .single-descriptive-sections-specs {
+            .content-descriptive-section {
+                &.text-custom {
+
+                    text-transform: uppercase;
+                    color:rgb(13, 110, 253);
+                }
+            }
+        }
+
+
+    }
 }

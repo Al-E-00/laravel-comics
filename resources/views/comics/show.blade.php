@@ -1,20 +1,20 @@
 @php
 $banner_icons = [
     [
-        "name" => "digital comics",
-        "img" => "images/buy-comics-digital-comics.png"
+        'name' => 'digital comics',
+        'img' => 'images/buy-comics-digital-comics.png',
     ],
     [
-        "name" => "shop dc",
-        "img" => "images/buy-comics-subscriptions.png"
+        'name' => 'shop dc',
+        'img' => 'images/buy-comics-subscriptions.png',
     ],
     [
-        "name" => "comic shop locator",
-        "img" => "images/buy-comics-shop-locator.png"
+        'name' => 'comic shop locator',
+        'img' => 'images/buy-comics-shop-locator.png',
     ],
     [
-        "name" => "merchandise",
-        "img" => "images/buy-comics-merchandise.png"
+        'name' => 'merchandise',
+        'img' => 'images/buy-comics-merchandise.png',
     ],
 ];
 
@@ -41,7 +41,7 @@ $banner_icons = [
                 <h5 class="custom-title-style">{{ $comic['title'] }}</h5>
                 <div class="custom-banner-check-availability">
                     <span class="text-color-light ps-3">
-                        U.S. Price: 
+                        U.S. Price:
                     </span>
                     <span class="text-white ps-1">
                         {{ $comic['price'] }}
@@ -49,7 +49,8 @@ $banner_icons = [
                     <span class="text-color-light is-available-write">
                         {{ $comic['availability'] }}
                     </span>
-                    <button class="text-white button-check-availability">Check Availability <i class="fa-solid fa-caret-down custom-icon-for-button-availability"></i></button>
+                    <button class="text-white button-check-availability">Check Availability <i
+                            class="fa-solid fa-caret-down custom-icon-for-button-availability"></i></button>
                 </div>
                 <p class="comic-full-description">
                     {{ $comic['description'] }}
@@ -60,77 +61,107 @@ $banner_icons = [
                 <img src="{{ asset('images/adv.jpg') }}" alt="{{ asset($comic['title']) }}">
             </div>
         </div>
-        <div class="row custom-container-dimension ">
+        <div class="row custom-container-dimension talent-and-specs-section">
             <div class="col">
                 <h6>Talent</h6>
-                <div>
-                    <span class="title-descriptive-section">
-                        Art by:
-                    </span>
-                    <span class="content-descriptive-section">
-                        @foreach ($comic['artists'] as $artist)
-                            {{ $artist }}
-                    </span>
-                    @if (!$loop->last)
-                        <span>,</span>
-                    @endif
-                    @endforeach
+                <div class="single-descriptive-sections-talent">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="title-descriptive-section">
+                                Art by:
+                            </span>
+                        </div>
+                        <div class="col">
+                            @foreach ($comic['artists'] as $artist)
+                            <span class="content-descriptive-section">
+                                    {{ $artist }}
+                            </span>
+                            @if (!$loop->last)
+                                <span class="content-descriptive-section">,</span>
+                            @endif
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <span class="title-descriptive-section">
-                        Written by:
-                    </span>
-                    <span class="content-descriptive-section">
-                        @foreach ($comic['writers'] as $writer)
-                            {{ $writer }}
-                    </span>
-    
-                    @if (!$loop->last)
-                        <span>,</span>
-                    @endif
-                    @endforeach
+                <div class="single-descriptive-sections-talent">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="title-descriptive-section">
+                                Written by:
+                            </span>
+                        </div>
+                        <div class="col">
+                            @foreach ($comic['writers'] as $writer)
+                            <span class="content-descriptive-section">
+                                    {{ $writer }}
+                            </span>
+
+                            @if (!$loop->last)
+                                <span class="content-descriptive-section">,</span>
+                            @endif
+                            @endforeach
+                        </div>
+                    </div>
                 </div>
 
 
             </div>
             <div class="col">
                 <h6>Specs</h6>
-                <div>
-                    <span class="title-descriptive-section">
-                        Series: 
-                    </span>
-                    <span class="content-descriptive-section">
-                        {{ $comic['series'] }}
-                    </span>
+                <div class="single-descriptive-sections-specs">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="title-descriptive-section">
+                                Series:
+                            </span>
+                        </div>
+                        <div class="col">
+                            <span class="content-descriptive-section  text-custom">
+                                {{ $comic['series'] }}
+                            </span>        
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <span class="title-descriptive-section">
-                        U.S. Price:
-                    </span>
-                    <span class="content-descriptive-section">
-                        {{ $comic['price']}}
-                    </span>
+                <div class="single-descriptive-sections-specs">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="title-descriptive-section">
+                                U.S. Price:
+                            </span>
+                        </div>
+                        <div class="col">
+                            <span class="content-descriptive-section">
+                                {{ $comic['price'] }}
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <span class="title-descriptive-section">
-                        On Sale Date:
-                    </span>
-                    <span>
-                        {{ $comic['sale_date'] }}
-                    </span>
+                <div class="single-descriptive-sections-specs">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="title-descriptive-section">
+                                On Sale Date:
+                            </span>
+                        </div>
+                        <div class="col">
+                            <span>
+                                {{ $comic['sale_date'] }}
+                            </span>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row custom-container-dimension ">
             <div class="col d-flex">
-                @foreach($banner_icons as $banner)
-                <div>
-                    <span>
-                        {{ $banner['name'] }}
-                    </span>
-                    <img src="{{ asset($banner['img']) }}" alt="">
-                </div>
+                @foreach ($banner_icons as $banner)
+                    <div>
+                        <span>
+                            {{ $banner['name'] }}
+                        </span>
+                        <img src="{{ asset($banner['img']) }}" alt="">
+                    </div>
                 @endforeach
             </div>
         </div>
