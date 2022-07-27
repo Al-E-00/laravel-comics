@@ -1,21 +1,101 @@
 .custom-single-comic-image {
     position: absolute;
-    left: 20%;
+    left: 15%;
     top: 17rem;
     border: 1px solid white;
     z-index: 999;
-    
+
 }
 
 .custom-comic-image-section {
     .custom-division-line-header-comic {
         height: 4rem;
         width: 100%;
-        background-color: rgb(13,110,253);
+        background-color: rgb(13, 110, 253);
     }
 }
 
 .custom-container-dimension {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    justify-content: center;
+
+    &.description-section {
+        padding-top: 6rem;
+        padding-bottom: 5rem;
+
+        .comic-description-section {
+            .custom-title-style {
+                color: rgb(1, 40, 75);
+                font-size: 2.4rem;
+                text-transform: uppercase;
+            }
+        }
+
+        .custom-banner-check-availability {
+            background-color: rgb(72, 176, 71);
+            border: 1px solid lightgray;
+            position: relative;
+            padding: .8rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+            .is-available-write {
+                position: absolute;
+                right: 190px;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+            }
+
+            .button-check-availability {
+                background-color: rgb(72, 176, 71);
+                border: 0;
+                border-left: 1px solid lightgray;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+
+                .custom-icon-for-button-availability {
+                    display: flex;
+                    align-self: center;
+                    font-size: .8rem;
+                    padding-left: .7rem;
+                }
+            }
+        }
+
+        .text-color-light {
+            color: rgb(168, 255, 123);
+        }
+
+        .comic-full-description {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+        }
+
+        .advertisement-section {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            h6 {
+                text-transform: uppercase;
+                color: gray;
+                align-self: end;
+            }
+
+            img {
+
+                justify-content: end;
+            }
+        }
+    }
 }

@@ -36,27 +36,31 @@ $banner_icons = [
                 <div class="custom-division-line-header-comic"></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <h5>{{ $comic['title'] }}</h5>
-                <div>
-                    <span>
-                        U.S. Price: {{ $comic['price'] }}
+        <div class="row custom-container-dimension description-section">
+            <div class="col-8 comic-description-section">
+                <h5 class="custom-title-style">{{ $comic['title'] }}</h5>
+                <div class="custom-banner-check-availability">
+                    <span class="text-color-light ps-3">
+                        U.S. Price: 
                     </span>
-                    <span>
+                    <span class="text-white ps-1">
+                        {{ $comic['price'] }}
+                    </span>
+                    <span class="text-color-light is-available-write">
                         {{ $comic['availability'] }}
                     </span>
-                    <button>Check Availability</button>
+                    <button class="text-white button-check-availability">Check Availability <i class="fa-solid fa-caret-down custom-icon-for-button-availability"></i></button>
                 </div>
-                <p>
+                <p class="comic-full-description">
                     {{ $comic['description'] }}
                 </p>
             </div>
-            <div class="col">
+            <div class="col advertisement-section">
+                <h6>Advertisement</h6>
                 <img src="{{ asset('images/adv.jpg') }}" alt="{{ asset($comic['title']) }}">
             </div>
         </div>
-        <div class="row">
+        <div class="row custom-container-dimension ">
             <div class="col">
                 <h6>Talent</h6>
                 <div>
@@ -118,7 +122,7 @@ $banner_icons = [
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row custom-container-dimension ">
             <div class="col d-flex">
                 @foreach($banner_icons as $banner)
                 <div>
