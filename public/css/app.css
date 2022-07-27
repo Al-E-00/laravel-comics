@@ -402,5 +402,6 @@
 
 body {
   font-family: "Asap Condensed", sans-serif;
+  overflow-x: hidden;
 }
 
